@@ -1,0 +1,96 @@
+Broccoli
+Sisco Foods
+Produce
+Head
+1.20
+100
+Bananas
+Dole
+Produce
+1 Bunch
+1.45
+100
+Carrots
+Farmers Market
+Produce
+3LB Bag
+1.98
+50
+Carrots
+Ontario Farms
+Produce
+1 Bunch
+2.98
+45
+Carrots (mini)
+Farmers Market
+Produce
+340g Bag
+1.98
+100
+Honey Crisp Apples
+Abbey Hill Farms
+Produce
+1 Apple
+0.40
+125
+Royal Gala Apples
+Abbey Hill Farms
+Produce
+1 Apple
+0.50
+200
+Royal Gala Apples
+Abbey Hill Farms
+Produce
+5LB Bag
+4.98
+10
+Ritz Crackers
+Sisco Foods
+Pantry
+Box
+5.99
+50
+Giant Stuffed Manzilla Olives
+Fancy Supplier
+Deli
+Jar
+8.99
+15
+Delicio Rising Crust Pizza
+McCain
+Frozen
+Box
+6.99
+20
+2% Milk
+Sealtest
+Dairy
+4L
+2.98
+30
+2% Milk
+Neilson
+Dairy
+4L
+3.50
+20
+1% Milk
+Neilson
+Dairy
+2L
+2.50
+20
+Cheerios
+Sisco Foods
+Cereal
+450g box
+4.98
+35
+2% Milk
+Sealtest
+Dairy
+1L
+1.25
+30
