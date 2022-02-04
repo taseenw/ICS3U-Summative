@@ -8,26 +8,26 @@
 #include <math.h>
 
 typedef struct { //Structure to hold the data of all the users
-char fn[20];
-char ln[20];
-char email[30];
-char username[20];
-char password[20];
+    char fn[20];
+    char ln[20];
+    char email[30];
+    char username[20];
+    char password[20];
 }userinfo;
 
 typedef struct{ //Structure to hold the data of the groceries
-char item[40];
-char supplier[40];
-char department[40];
-char unitmeasure[40];
-float price;
-int quantity;
+    char item[40];
+    char supplier[40];
+    char department[40];
+    char unitmeasure[40];
+    float price;
+    int quantity;
 }groceryinfo;
 
 typedef struct{ //Structure to hold users cart
-char username[50];
-char itemnames[300][300];
-float totalcost;
+    char username[50];
+    char itemnames[300][300];
+    float totalcost;
 }buyercart;
 
 int MngLogin(int, groceryinfo *); //Function will login the manager
@@ -94,13 +94,14 @@ int MngLogin(int productcount, groceryinfo groceries[]){
     fp=fopen("managerlogininfo.txt" , "r+");
 
     while(!feof(fp)){
-     fscanf(fp,"%s",savedmanagers[i]); //Reading the manager names from the file into the variable
-     fscanf(fp,"%s",savedpasswords[i]); //Reading the manager passwords from the file into the varible
-     i++; //Counter representing the number of managers
+         fscanf(fp,"%s",savedmanagers[i]); //Reading the manager names from the file into the variable
+         fscanf(fp,"%s",savedpasswords[i]); //Reading the manager passwords from the file into the varible
+         i++; //Counter representing the number of managers
     }
 
     printf("\nSelect User (1-3):\n1. %s\n2. %s\n3. %s\n\n-> ",savedmanagers[0],savedmanagers[1],savedmanagers[2]);
     scanf("%i",&userchoice);
+    
     while(userchoice > 3 || userchoice < 1){
         printf("Invalid choice, please re-select\n-> ");
         scanf("%i",&userchoice);
@@ -186,9 +187,9 @@ void BuyerLogin(int productcount, int *loginnum, int buyercnt, userinfo users[],
             passcomp=strcmp(enteredpass,users[accnum].password); //Comparing the user entered password with the password in the file that matches the entered username
 
             while(passcomp != 0){ //If the comparison shows the user entered password is incorrect
-            printf("\nIncorrect, re-enter password: ");
-            scanf("%s",&enteredpass);
-            passcomp=strcmp(enteredpass,users[accnum].password);
+                printf("\nIncorrect, re-enter password: ");
+                scanf("%s",&enteredpass);
+                passcomp=strcmp(enteredpass,users[accnum].password);
             }
 
             if(passcomp == 0){ //If the comparison shows the user entered the correct password
@@ -493,12 +494,12 @@ int Usercycle(userinfo users[]){
 
     fp=fopen("buyerlogin.txt" , "r+");
     while(!feof(fp)){
-        fscanf(fp,"%s",users[count].fn);
-        fscanf(fp,"%s",users[count].ln);
-        fscanf(fp,"%s",users[count].email);
-        fscanf(fp,"%s",users[count].username);
-        fscanf(fp,"%s",users[count].password);
-        count++;
+            fscanf(fp,"%s",users[count].fn);
+            fscanf(fp,"%s",users[count].ln);
+            fscanf(fp,"%s",users[count].email);
+            fscanf(fp,"%s",users[count].username);
+            fscanf(fp,"%s",users[count].password);
+            count++;
         }
     fclose(fp);
 
